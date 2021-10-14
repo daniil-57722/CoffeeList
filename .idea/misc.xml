@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Liza/AndroidStudioProjects/CoffeeList/app/src/main/res/drawable-v24/circle.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Liza/AndroidStudioProjects/CoffeeList/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Liza/AndroidStudioProjects/CoffeeList/app/src/main/res/drawable/circleitem.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Liza/AndroidStudioProjects/CoffeeList/app/src/main/res/layout/activity_coffee.xml" value="0.13020833333333334" />
-        <entry key="..\:/Users/Liza/AndroidStudioProjects/CoffeeList/app/src/main/res/layout/activity_main.xml" value="0.11639492753623189" />
+        <entry key="..\:/Users/Liza/AndroidStudioProjects/CoffeeList/app/src/main/res/layout/activity_main.xml" value="0.2" />
       </map>
     </option>
   </component>

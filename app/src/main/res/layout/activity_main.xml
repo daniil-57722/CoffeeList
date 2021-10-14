@@ -24,6 +24,7 @@
         app:srcCompat="@drawable/pic"
         tools:layout_editor_absoluteX="0dp" />
     <ListView
+        android:entries="@array/coffees"
         android:layout_marginTop="250dp"
         android:layout_height="match_parent"
         android:layout_width="match_parent"

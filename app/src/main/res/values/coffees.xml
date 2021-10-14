@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources><string-array name="countries">
+<resources><string-array name="coffees">
     <item>Эспрессо</item>
     <item>Американо</item>
     <item>Капучино</item>
