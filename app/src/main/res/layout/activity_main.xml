@@ -23,14 +23,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:srcCompat="@drawable/pic"
         tools:layout_editor_absoluteX="0dp" />
+
     <ListView
         android:entries="@array/coffees"
         android:layout_marginTop="250dp"
+        android:gravity="center_vertical"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:background="@drawable/circleitem"
         android:divider="@color/nocolor"
+        android:dividerHeight="10.0sp"
+        android:paddingTop="10dp"
         />
+
 
 
 </RelativeLayout>
