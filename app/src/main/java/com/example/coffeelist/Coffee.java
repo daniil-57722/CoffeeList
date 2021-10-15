@@ -3,6 +3,7 @@ package com.example.coffeelist;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.widget.TextView;
 
 public class Coffee extends AppCompatActivity {
@@ -14,7 +15,7 @@ public class Coffee extends AppCompatActivity {
 
         TextView coffeeNameTextView = (TextView) findViewById(R.id.headline);
         TextView coffeeInfoTextView = (TextView) findViewById(R.id.textCoffeeInfo);
-
+        coffeeInfoTextView.setMovementMethod(new ScrollingMovementMethod());
         String coffeeNameString = getIntent().getExtras().getString("coffeeName");
         String coffeeInfoString = getIntent().getExtras().getString("coffeeInfo");
 
