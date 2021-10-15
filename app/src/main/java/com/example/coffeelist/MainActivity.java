@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter(
                 this,
                 android.R.layout.simple_list_item_1,
-                (List) coffeesMap.keySet()
+                coffeesMap.keySet().toArray()
         );
 
         coffeesListView.setAdapter(arrayAdapter);
