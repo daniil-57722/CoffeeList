@@ -55,9 +55,6 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("coffeeName", selectedItem);
                 intent.putExtra("coffeeInfo", selectedInfo);
                 startActivity(intent);
-
-                //замена для второго лейаута
-//                Toast.makeText(getApplicationContext(), selectedInfo, Toast.LENGTH_LONG).show();
             }
         });
     }
