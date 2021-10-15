@@ -2,9 +2,14 @@ package com.example.coffeelist;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.HashMap;
 import java.util.List;
@@ -38,6 +43,23 @@ public class MainActivity extends AppCompatActivity {
         );
 
         coffeesListView.setAdapter(arrayAdapter);
+
+        coffeesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                TextView textView = (TextView) view;
+                String selectedItem = (String) textView.getText();
+                String selectedInfo = coffeesMap.get(selectedItem);
+
+                Intent intent = new Intent(getApplicationContext(), Coffee.class);
+                intent.putExtra("coffeeName", selectedItem);
+                intent.putExtra("coffeeInfo", selectedInfo);
+                startActivity(intent);
+
+                //замена для второго лейаута
+//                Toast.makeText(getApplicationContext(), selectedInfo, Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
 }
