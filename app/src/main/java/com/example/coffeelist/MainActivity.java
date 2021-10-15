@@ -23,16 +23,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        coffeesMap.put("Эспрессо", "Здесь могла бы быть информация про Эспрессо");
-        coffeesMap.put("Американо", "Здесь могла бы быть информация про Американо");
-        coffeesMap.put("Капучино", "Здесь могла бы быть информация про Капучино");
-        coffeesMap.put("Латте", "Здесь могла бы быть информация про Латте");
-        coffeesMap.put("Гляссе", "Здесь могла бы быть информация про Гляссе");
-        coffeesMap.put("Мокко", "Здесь могла бы быть информация про Мокко");
-        coffeesMap.put("Флэт Уайт", "Здесь могла бы быть информация про Флэт Уайт");
-        coffeesMap.put("Раф", "Здесь могла бы быть информация про Раф");
-        coffeesMap.put("Макиато", "Здесь могла бы быть информация про Макиато");
-        coffeesMap.put("Латте макиато", "Здесь могла бы быть информация про Латте макиато");
+        coffeesMap.put("Эспрессо", getString(R.string.espresso));
+        coffeesMap.put("Американо", getString(R.string.americano));
+        coffeesMap.put("Капучино", getString(R.string.capuchino));
+        coffeesMap.put("Латте", getString(R.string.latte));
+        coffeesMap.put("Гляссе", getString(R.string.glasse));
+        coffeesMap.put("Мокко", getString(R.string.mokko));
+        coffeesMap.put("Флэт Уайт", getString(R.string.flat_white));
+        coffeesMap.put("Раф", getString(R.string.raph));
+        coffeesMap.put("Макиато", getString(R.string.makiato));
+        coffeesMap.put("Латте макиато", getString(R.string.latte_makiato));
 
         ListView coffeesListView = (ListView) findViewById(R.id.coffeesListView);
 
