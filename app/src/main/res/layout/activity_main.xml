@@ -1,39 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/background_first_vertical">
 
     <ImageView
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/verticalLabelMarginTop"
         android:layout_centerHorizontal="true"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:background="@drawable/circle"
-        tools:layout_editor_absoluteX="0dp" />
+        android:layout_width="@dimen/verticalLabelDimen"
+        android:layout_height="@dimen/verticalLabelDimen"
+        android:background="@drawable/circle" />
 
     <ImageView
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/verticalLabelMarginTop"
         android:id="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="@dimen/verticalLabelDimen"
+        android:layout_height="@dimen/verticalLabelDimen"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@drawable/pic"
-        tools:layout_editor_absoluteX="0dp" />
+        app:srcCompat="@drawable/pic" />
 
     <ListView
         android:id="@+id/coffeesListView"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="@dimen/verticalListviewMarginTop"
         android:gravity="center_vertical"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:background="@drawable/circleitem"
         android:divider="@color/nocolor"
-        android:dividerHeight="10.0sp"
-        android:paddingTop="10dp"
+        android:dividerHeight="@dimen/ListviewDividerHeight"
+        android:paddingTop="@dimen/textPadding"
         />
 
 
