@@ -26,9 +26,18 @@
 
         <TextView
             android:layout_marginTop="250dp"
+            android:gravity="center"
+            android:id="@+id/headline"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:text="кофе"
+            android:textSize="30sp"
             android:background="@drawable/second_activity_txtview_bg"/>
+        <TextView
+                android:layout_below="@+id/headline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_pic"/>
 
 
 
