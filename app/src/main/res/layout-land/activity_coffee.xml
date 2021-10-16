@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/bg_horizontal"
-    tools:context=".Coffee">
+    tools:context=".Coffee"
+    tools:ignore="WebViewLayout">
 
     <TextView
         android:id="@+id/headline"
@@ -16,7 +17,7 @@
         android:textSize="@dimen/headlineTextSize"
         android:textColor="@color/black"/>
 
-    <TextView
+    <WebView
         android:scrollbars="vertical"
         android:padding="@dimen/textPadding"
         android:id="@+id/textCoffeeInfo"
