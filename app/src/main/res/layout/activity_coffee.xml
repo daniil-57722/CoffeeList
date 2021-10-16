@@ -33,7 +33,7 @@
         android:textSize="@dimen/headlineTextSize"
         android:textColor="@color/black"/>
 
-    <TextView
+    <WebView
         android:scrollbars="vertical"
         android:padding="@dimen/textPadding"
         android:id="@+id/textCoffeeInfo"
@@ -41,7 +41,8 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/headline"
         android:background="@color/bg_pic"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        tools:ignore="WebViewLayout" />
 
 
 </RelativeLayout>
